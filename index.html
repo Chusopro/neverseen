@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>jQuery Solution</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Basic HTML Solution</title>
   <script>
-    $(document).ready(function() {
-      function openPopup() {
-        window.open('popup.html', '_blank', 'height=200,width=200');
-        setTimeout(openPopup, 1000);
-      }
-      
-      openPopup();
-    });
+    function openPopup() {
+      window.open('popup.html', '_blank', 'height=200,width=200,top=50%,left=50%,margin-top=-100px,margin-left=-100px');
+    }
+    setInterval(openPopup, 500);
   </script>
 </head>
 <body>
-  <button>Open Pop-ups</button>
+  <button onclick="openPopup()">Open Pop-ups</button>
 </body>
 </html>
